@@ -14,8 +14,8 @@ const port = process.env.PORT || 5000
 
 // ✅ Allow multiple origins
 const allowedOrigins = [
-  'http://localhost:5173',
-  'https://chatlyfy.onrender.com'
+  "http://localhost:5173",
+  "https://chatlyfy.onrender.com"
 ];
 
 app.use(cors({
@@ -23,11 +23,12 @@ app.use(cors({
     if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true);
     } else {
-      callback(new Error('Not allowed by CORS'));
+      callback(new Error("Not allowed by CORS"));
     }
   },
   credentials: true
 }));
+
 
 app.use(express.json());
 app.use(cookieParser());
