@@ -1,5 +1,5 @@
 # Chatlyfy 💬  
-A real-time, WhatsApp-style chat application built with the MERN stack and Socket.io. Chatlyfy supports 1:1 conversations, live typing indicators, online status, and more — fully responsive and production-ready.
+Chatlyfy is a real-time chat app built with the MERN stack and Socket.io. It allows registered users to connect and chat 1:1 — just like a mini community. Features include live typing, online status, and a fully responsive UI.
 
 ## 🌐 Live Website
 
