@@ -45,6 +45,7 @@ export const signup = async (req, res) => {
         // Generate JWT token
         const token = await genToken(user._id);
 
+<<<<<<< HEAD
         // Set cookie
         res.cookie("token", token, {
             httpOnly: true,
@@ -52,6 +53,14 @@ export const signup = async (req, res) => {
             sameSite: "Lax",
             secure: false
         });
+=======
+        res.cookie("token",token,{
+            httpOnly:true,
+            maxAge:7*24*60*60*1000,
+            sameSite:"None",
+            secure:true
+        })
+>>>>>>> 7a5c45021e22713c7c3662c60c534ad454f9189d
 
         return res.status(201).json(user);
 
@@ -80,6 +89,7 @@ export const Login = async (req, res) => {
         // Generate JWT token
         const token = await genToken(user._id);
 
+<<<<<<< HEAD
         // Set cookie
         res.cookie("token", token, {
             httpOnly: true,
@@ -87,6 +97,14 @@ export const Login = async (req, res) => {
             sameSite: "Lax",
             secure: false
         });
+=======
+        res.cookie("token",token,{
+            httpOnly:true,
+            maxAge:7*24*60*60*1000,
+           sameSite:"None",
+            secure:true
+        })
+>>>>>>> 7a5c45021e22713c7c3662c60c534ad454f9189d
 
         return res.status(200).json(user);
 
