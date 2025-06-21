@@ -28,7 +28,7 @@ export const signup = async (req, res) => {
         const passwordRegex = /^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[@#$%^&+=!]).{6,}$/;
         if (!passwordRegex.test(password)) {
             return res.status(400).json({
-                message: "Password must include letters, numbers, and a special character like @12as"
+                message: "Password must have letters, numbers, @ # .."
             });
         }
 
